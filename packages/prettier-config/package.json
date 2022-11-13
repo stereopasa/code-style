@@ -1,0 +1,18 @@
+{
+  "name": "@stereopasa/prettier-config",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stereopasa/code-style.git",
+    "directory": "packages/prettier-config"
+  },
+  "license": "MIT",
+  "author": "stereopasa",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "main.cjs",
+  "peerDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

@@ -1,0 +1,39 @@
+#######################
+## Specific to Prettier
+#######################
+
+## Ignore all files (but still allow sub-folder scanning)
+*
+!*/
+
+## Allow certain file types
+!*.cjs
+!*.js
+!*.json
+!*.md
+!*.mjs
+!*.ts
+!*.tsx
+
+########################
+## Same as in .gitignore
+########################
+
+## js
+dist
+node_modules
+
+# misc
+.DS_Store
+
+# debug
+lerna-debug.log*
+npm-debug.log*
+
+#########################
+## Shared between linters
+#########################
+
+.git/
+.idea/
+.vscode/

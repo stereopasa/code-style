@@ -1,0 +1,14 @@
+# js
+dist
+node_modules
+
+# misc
+.DS_Store
+*.tgz
+
+# debug
+lerna-debug.log*
+npm-debug.log*
+
+.idea/
+.vscode/

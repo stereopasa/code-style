@@ -23,12 +23,19 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install npm
         run: npm install -g npm@8
-      - name: Install Dependencies
-        run: npm ci
-      - name: Run all linters
-        run: npm run lint
+      - name: npm ci, lint
+        run: |
+          npm ci
+          npm run lint
+        env:
+          CI: true
 
       # Publish to NPM
       - name: Publish Latest Release
         if: github.event_name == 'release' && github.event.release.prerelease == false && env.NODE_AUTH_TOKEN != ''
         run: npm run publish-ci
+
+      # Publish to NPM with prerelease dist-tag
+      - name: Publish Latest Prerelease
+        if: github.event_name == 'release' && github.event.release.prerelease && env.NODE_AUTH_TOKEN != ''
+        run: npm run publish-ci -- --dist-tag prerelease

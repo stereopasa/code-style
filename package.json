@@ -12,7 +12,8 @@
     "lint:packages": "lerna run lint",
     "lint:prettier": "prettier --check .",
     "pack": "lerna exec -- npm pack",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "publish-ci": "lerna publish from-package --yes --no-verify-access"
   },
   "lint-staged": {
     "**": [

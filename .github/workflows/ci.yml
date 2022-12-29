@@ -24,11 +24,17 @@ jobs:
         with:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
-      - name: Install npm
-        run: npm install -g npm@8
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-
+      # - name: Install npm
+      #   run: npm install -g npm@8
       - name: npm ci, lint
         run: |
-          npm ci
+          npm ci --ignore-scripts
           npm run lint
         env:
           CI: true

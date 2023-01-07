@@ -8,9 +8,6 @@
   },
   "license": "MIT",
   "author": "stereopasa",
-  "publishConfig": {
-    "access": "public"
-  },
   "type": "commonjs",
   "exports": {
     ".": "./main.cjs",

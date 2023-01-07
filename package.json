@@ -13,7 +13,7 @@
     "lint:prettier": "prettier --check .",
     "pack": "lerna exec -- npm pack",
     "prepare": "husky install",
-    "publish-ci": "lerna publish from-package --yes --no-verify-access"
+    "publish-ci": "lerna publish from-git --yes"
   },
   "lint-staged": {
     "**": [

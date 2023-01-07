@@ -1,7 +1,7 @@
 {
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md"]
+      "ignoreChanges": ["**/node_modules/**", "**/package.json", "**/*.md"]
     }
   },
   "useWorkspaces": true,

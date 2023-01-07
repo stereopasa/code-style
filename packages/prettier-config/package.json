@@ -1,6 +1,6 @@
 {
   "name": "@stereopasa/prettier-config",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "repository": {
     "type": "git",
     "url": "git@github.com:stereopasa/code-style.git",
@@ -13,6 +13,6 @@
   },
   "main": "main.cjs",
   "peerDependencies": {
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.2"
   }
 }

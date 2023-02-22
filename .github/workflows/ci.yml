@@ -19,32 +19,45 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Use Node.js
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          registry-url: 'https://registry.npmjs.org'
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: npm-${{ hashFiles('package-lock.json') }}
-          restore-keys: npm-
+          node-version: 18
+          cache: 'pnpm'
+      # - name: Use Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 16
+      #     registry-url: 'https://registry.npmjs.org'
+      # - name: Cache dependencies
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: ~/.npm
+      #     key: npm-${{ hashFiles('package-lock.json') }}
+      #     restore-keys: npm-
       # - name: Install npm
       #   run: npm install -g npm@8
-      - name: npm ci, lint
-        run: |
-          npm ci --ignore-scripts
-          npm run lint
+      # - name: npm ci, lint
+      #   run: |
+      #     npm ci --ignore-scripts
+      #     npm run lint
+      #   env:
+      #     CI: true
+      - name: Install dependencies
         env:
           CI: true
+        run: |
+          pnpm install
+          npm run lint
 
       # Publish to NPM
       - name: Publish Latest Release
         if: github.event_name == 'release' && github.event.release.prerelease == false && env.NODE_AUTH_TOKEN != ''
-        run: npm run publish-ci
+        run: pnpm run publish-ci
 
       # Publish to NPM with prerelease dist-tag
       - name: Publish Latest Prerelease
         if: github.event_name == 'release' && github.event.release.prerelease && env.NODE_AUTH_TOKEN != ''
-        run: npm run publish-ci -- --dist-tag prerelease
+        run: pnpm run publish-ci --dist-tag prerelease

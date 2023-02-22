@@ -4,6 +4,7 @@
       "ignoreChanges": ["**/node_modules/**", "**/package.json", "**/*.md"]
     }
   },
+  "npmClient": "pnpm",
   "useWorkspaces": true,
   "version": "independent",
   "publishConfig": {

@@ -50,7 +50,7 @@ jobs:
           CI: true
         run: |
           pnpm install
-          npm run lint
+          pnpm run lint
 
       # Publish to NPM
       - name: Publish Latest Release

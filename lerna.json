@@ -1,7 +1,9 @@
 {
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "command": {
     "publish": {
-      "ignoreChanges": ["**/node_modules/**", "**/package.json", "**/*.md"]
+      "ignoreChanges": ["**/node_modules/**", "**/package.json", "**/*.md"],
+      "loglevel": "verbose"
     }
   },
   "npmClient": "pnpm",

@@ -15,6 +15,7 @@ jobs:
   build:
     env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN || '' }}
+      HUSKY: 0
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

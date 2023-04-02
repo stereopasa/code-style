@@ -8,7 +8,6 @@ cli
   .option('--pnpm', 'project managed by PNPM')
   .option('--npm', 'project managed by NPM')
   .option('--prettier', 'with prettier')
-  .option('--ts', 'with typescript')
   .action(async (dirName, options) => {
     try {
       // await indexFiles(postsDir);

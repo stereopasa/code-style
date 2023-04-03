@@ -14,5 +14,8 @@
   },
   "peerDependencies": {
     "prettier": "^2.8.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

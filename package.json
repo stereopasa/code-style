@@ -4,8 +4,8 @@
     "packages/*"
   ],
   "scripts": {
-    "ci:publish": "pnpm publish -r --no-git-checks",
-    "ci:version": "changeset version",
+    "ci:publish": "changeset publish",
+    "ci:version": "changeset version && pnpm install --no-frozen-lockfile",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier --write .",
     "fix": "npm-run-all --continue-on-error \"fix:*\"",

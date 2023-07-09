@@ -2,11 +2,11 @@
 ## Specific to ESLint
 #####################
 
-# Ignore all files (but still allow sub-folder scanning)
+## ignore all files (but still allow sub-folder scanning)
 *
 !*/
 
-# Allow certain file types
+## allow certain file types
 !*.cjs
 !*.js
 !*.json
@@ -14,19 +14,13 @@
 !*.ts
 !*.tsx
 
-########################
-## Same as in .gitignore
-########################
 
-# js
-dist
-node_modules
-
-# misc
+## misc
+tsconfig.tsbuildinfo
 .DS_Store
-.changeset/
+.env*
 
-# debug
+## debug
 logs
 *.log
 npm-debug.log*
@@ -35,10 +29,24 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
 #########################
 ## Shared between linters
 #########################
 
 .git/
-.idea/
-.vscode/

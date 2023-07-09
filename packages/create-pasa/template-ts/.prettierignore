@@ -1,0 +1,10 @@
+## Ignore all files (but still allow sub-folder scanning)
+*
+!*/
+
+## Allow certain file types
+!*.ts
+!**/package.json
+!**/tsconfig.json
+!prettier.config.js
+!*.html

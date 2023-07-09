@@ -11,5 +11,5 @@ module.exports = {
   trailingComma: 'all',
   useTabs: false,
 
-  plugins: [require('prettier-plugin-packagejson')],
+  plugins: ['prettier-plugin-packagejson'],
 };

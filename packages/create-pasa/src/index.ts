@@ -49,6 +49,8 @@ const TEMPLATES = FRAMEWORKS.map(
 
 const renameFiles: Record<string, string | undefined> = {
   _gitignore: '.gitignore',
+  '_eslintrc.cjs': '.eslintrc.cjs',
+  '_prettier.config.js': 'prettier.config.js',
 };
 
 const defaultTargetDir = 'test-project';
@@ -212,7 +214,7 @@ async function init() {
   };
 
   const files = fs.readdirSync(templateDir);
-  for (const file of files.filter((f) => f !== 'package.json')) {
+  for (const file of files.filter((f: string) => f !== 'package.json')) {
     write(file);
   }
 

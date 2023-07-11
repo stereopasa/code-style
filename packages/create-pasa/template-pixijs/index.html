@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #222222;">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌎</text></svg>">
+    <title>pixijs-sandbox</title>
+
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <noscript>Please enable JavaScript in your web browser to view this page.</noscript>
+    <div id="pixi-content">
+      <canvas id="pixi-canvas">
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="application/javascript">
+      var script = document.createElement('script');
+      script.onload = function () {
+        var stats = new Stats();
+        document.body.appendChild(stats.dom);
+        requestAnimationFrame(function loop() {
+          stats.update();
+          requestAnimationFrame(loop);
+        });
+      };
+      script.src = 'https://mrdoob.github.io/stats.js/build/stats.min.js';
+      document.head.appendChild(script);
+    </script>
+  </body>
+</html>

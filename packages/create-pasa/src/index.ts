@@ -41,6 +41,18 @@ const FRAMEWORKS: Framework[] = [
       },
     ],
   },
+  {
+    name: 'pixijs',
+    display: 'PixiJS',
+    color: yellow,
+    variants: [
+      {
+        name: 'pixijs',
+        display: 'default',
+        color: blue,
+      },
+    ],
+  },
 ];
 
 const TEMPLATES = FRAMEWORKS.map(

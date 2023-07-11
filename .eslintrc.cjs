@@ -6,13 +6,10 @@ module.exports = {
   ignorePatterns: ['packages/create-pasa/template-*/**'],
   overrides: [
     {
-      files: [
-        'packages/create-pasa/template-*/**',
-        'packages/create-pasa/index.js',
-        '**/build.config.ts',
-      ],
+      files: ['packages/create-pasa/template-*/**', '**/build.config.ts'],
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         'import/no-unresolved': 'off',
         'n/no-missing-import': 'off',
         'no-undef': 'off',

@@ -137,8 +137,10 @@ async function init() {
         },
       },
     );
-  } catch (cancelled: any) {
-    console.log(cancelled.message);
+  } catch (cancelled: unknown) {
+    if (cancelled instanceof Error) {
+      console.log(cancelled.message);
+    }
     return;
   }
 

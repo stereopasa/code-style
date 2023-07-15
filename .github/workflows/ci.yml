@@ -15,6 +15,10 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name == 'pull_request_target' && github.head_ref || github.ref }}
   cancel-in-progress: true
+# Cancel previous running workflow in case of a new push
+# concurrency:
+#   group: ci-${{ github.head_ref || 'main' }}
+#   cancel-in-progress: true
 
 jobs:
   build:
@@ -22,6 +26,7 @@ jobs:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN || '' }}
       HUSKY: 0
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v3

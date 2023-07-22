@@ -1,5 +1,11 @@
 # @stereopasa/prettier-config
 
+## 1.1.4
+
+### Patch Changes
+
+- 6f17ce7: chore(prettier): bump plugin-packagejson
+
 ## 1.1.3
 
 ### Patch Changes

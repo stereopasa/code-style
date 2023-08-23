@@ -33,23 +33,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        id: pnpm-install
-        with:
-          version: 8
-          run_install: false
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v2
+      #   id: pnpm-install
+      #   with:
+      #     version: 8
+      #     run_install: false
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          # cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install dependencies
-        if: ${{ steps.cache-node.outputs.cache-hit != 'true' }}
-        run: pnpm install
+      - name: 📥 Monorepo install
+        uses: ./.github/actions/pnpm-install
 
       - name: 'Lint'
         run: pnpm run lint

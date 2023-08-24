@@ -12,13 +12,12 @@ export interface IScene extends DisplayObject {
 }
 
 export abstract class AbstractScene extends Container implements IScene {
-  // eslint-disable-next-line @typescript-eslint/no-empty-function, @typescript-eslint/no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   update(_framesPassed: number): void {}
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function, @typescript-eslint/no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   resize(_screenWidth: number, _screenHeight: number): void {}
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
   destroy(): void {}
 }
 

@@ -11,7 +11,7 @@ module.exports = {
     'prettier',
   ],
   parser: require.resolve('@typescript-eslint/parser'),
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint/eslint-plugin', 'eslint-plugin-import'],
   reportUnusedDisableDirectives: true,
   rules: {},
   overrides: [

@@ -1,5 +1,6 @@
 import './style.css';
 import typescriptLogo from './typescript.svg';
+// _eslint-disable-next-line import/no-unresolved
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.ts';
 

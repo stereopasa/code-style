@@ -1,5 +1,11 @@
 # @stereopasa/eslint-config-base
 
+## 0.0.4
+
+### Patch Changes
+
+- 1e53708: chore: bump @typescript-eslint
+
 ## 0.0.3
 
 ### Patch Changes

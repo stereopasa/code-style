@@ -10,7 +10,7 @@
   "author": "stereopasa",
   "main": "main.cjs",
   "dependencies": {
-    "prettier-plugin-packagejson": "^2.4.5"
+    "prettier-plugin-packagejson": "^2.4.6"
   },
   "peerDependencies": {
     "prettier": "^2.8.2 || ^3.0.0"

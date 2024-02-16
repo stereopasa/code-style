@@ -15,7 +15,7 @@
     "lint": "npm-run-all --continue-on-error \"lint:*\"",
     "pack": "pnpm -r exec npm pack",
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "lint-staged": {
     "**": [
@@ -42,6 +42,6 @@
     "yarn": "please-use-npm"
   },
   "volta": {
-    "node": "20.11.0"
+    "node": "20.11.1"
   }
 }

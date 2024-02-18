@@ -8,9 +8,14 @@
   },
   "license": "MIT",
   "author": "stereopasa",
-  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./main.cjs",
+      "import": "./main.mjs"
+    }
+  },
   "main": "main.cjs",
-  "module": "main.js",
+  "module": "main.mjs",
   "dependencies": {
     "prettier-plugin-packagejson": "^2.4.11"
   },

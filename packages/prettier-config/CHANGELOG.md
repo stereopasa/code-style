@@ -1,5 +1,11 @@
 # @stereopasa/prettier-config
 
+## 1.2.2
+
+### Patch Changes
+
+- ef9acf5: fix(prettier): exports in package.json
+
 ## 1.2.1
 
 ### Patch Changes

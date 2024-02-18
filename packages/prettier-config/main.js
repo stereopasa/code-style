@@ -1,4 +1,5 @@
-module.exports = {
+/* @type {import("prettier").Config} */
+const config = {
   arrowParens: 'always',
   bracketSpacing: true,
   endOfLine: 'lf',
@@ -13,3 +14,5 @@ module.exports = {
 
   plugins: ['prettier-plugin-packagejson'],
 };
+
+export default config;

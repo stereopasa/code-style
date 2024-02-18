@@ -1,5 +1,11 @@
 # @stereopasa/prettier-config
 
+## 1.2.1
+
+### Patch Changes
+
+- d4b1014: fix(prettier): cjs
+
 ## 1.2.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @stereopasa/prettier-config
 
+## 1.2.0
+
+### Minor Changes
+
+- b8ceb45: feat(prettier): type module
+
 ## 1.1.4
 
 ### Patch Changes

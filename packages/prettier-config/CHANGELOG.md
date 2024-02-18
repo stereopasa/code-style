@@ -1,5 +1,11 @@
 # @stereopasa/prettier-config
 
+## 1.2.3
+
+### Patch Changes
+
+- 91fe1ed: fix(prettier): wrong entry filename
+
 ## 1.2.2
 
 ### Patch Changes

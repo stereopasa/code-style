@@ -84,8 +84,8 @@ importers:
   packages/prettier-config:
     dependencies:
       prettier-plugin-packagejson:
-        specifier: ^2.4.11
-        version: 2.4.11(prettier@3.2.5)
+        specifier: ^2.4.12
+        version: 2.4.12(prettier@3.2.5)
 
 packages:
 
@@ -2400,7 +2400,7 @@ packages:
       array-union: 2.1.0
       dir-glob: 3.0.1
       fast-glob: 3.3.0
-      ignore: 5.2.4
+      ignore: 5.3.1
       merge2: 1.4.1
       slash: 3.0.0
 
@@ -2410,7 +2410,7 @@ packages:
     dependencies:
       dir-glob: 3.0.1
       fast-glob: 3.3.0
-      ignore: 5.2.4
+      ignore: 5.3.1
       merge2: 1.4.1
       slash: 4.0.0
 
@@ -2511,6 +2511,7 @@ packages:
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
+    dev: false
 
   /ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
@@ -3386,8 +3387,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  /prettier-plugin-packagejson@2.4.11(prettier@3.2.5):
-    resolution: {integrity: sha512-zmOmM96GkAjT2zUdHSQJnpyVpbisBkewDluo2NLHjI/JN7uOCZlEzWVaMhdqyZ8LVdQDfzamvbvSw4swd3Az1A==}
+  /prettier-plugin-packagejson@2.4.12(prettier@3.2.5):
+    resolution: {integrity: sha512-hifuuOgw5rHHTdouw9VrhT8+Nd7UwxtL1qco8dUfd4XUFQL6ia3xyjSxhPQTsGnSYFraTWy5Omb+MZm/OWDTpQ==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
@@ -3395,7 +3396,7 @@ packages:
         optional: true
     dependencies:
       prettier: 3.2.5
-      sort-package-json: 2.7.0
+      sort-package-json: 2.8.0
       synckit: 0.9.0
     dev: false
 
@@ -3697,8 +3698,8 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: false
 
-  /sort-package-json@2.7.0:
-    resolution: {integrity: sha512-6AayF8bp6L+WROgpbhTMUtB9JSFmpGHjmW7DyaNPS1HwlTw2oSVlUUtlkHSEZmg5o89F3zvLBZNvMeZ1T4fjQg==}
+  /sort-package-json@2.8.0:
+    resolution: {integrity: sha512-PxeNg93bTJWmDGnu0HADDucoxfFiKkIr73Kv85EBThlI1YQPdc0XovBgg2llD0iABZbu2SlKo8ntGmOP9wOj/g==}
     hasBin: true
     dependencies:
       detect-indent: 7.0.1

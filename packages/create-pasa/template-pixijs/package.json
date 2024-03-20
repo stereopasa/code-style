@@ -21,8 +21,8 @@
     "pixi.js": "^7.2.4"
   },
   "devDependencies": {
-    "@stereopasa/eslint-config-base": "^0.0.3",
-    "@stereopasa/prettier-config": "~1.1.4",
+    "@stereopasa/eslint-config-base": "~0.0.5",
+    "@stereopasa/prettier-config": "~1.2.4",
     "@tsconfig/node18": "^18.2.1",
     "@tsconfig/strictest": "^2.0.1",
     "eslint": "^8.47.0",

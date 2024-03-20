@@ -1,6 +1,6 @@
 {
   "name": "@stereopasa/prettier-config",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "repository": {
     "type": "git",
     "url": "git@github.com:stereopasa/code-style.git",

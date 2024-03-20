@@ -13,6 +13,7 @@
 !*.md
 !*.mjs
 !*.ts
+!*.mts
 !*.tsx
 !*.yml
 

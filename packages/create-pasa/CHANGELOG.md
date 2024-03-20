@@ -1,5 +1,11 @@
 # create-pasa
 
+## 0.0.5
+
+### Patch Changes
+
+- e808a43: chore(create): bump internal deps versions for templates
+
 ## 0.0.4
 
 ### Patch Changes

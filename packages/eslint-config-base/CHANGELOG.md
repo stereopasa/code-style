@@ -1,5 +1,11 @@
 # @stereopasa/eslint-config-base
 
+## 0.0.5
+
+### Patch Changes
+
+- 6fd1440: chore(eslint): bump typescript-eslint rushstack/eslint-patch
+
 ## 0.0.4
 
 ### Patch Changes

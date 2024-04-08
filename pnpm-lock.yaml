@@ -36,8 +36,8 @@ importers:
         specifier: ^4.7.1
         version: 4.7.1
       type-fest:
-        specifier: ^4.13.0
-        version: 4.13.0
+        specifier: ^4.15.0
+        version: 4.15.0
       typescript:
         specifier: ^5.4.2
         version: 5.4.2
@@ -253,6 +253,7 @@ packages:
   /@babel/highlight@7.24.2:
     resolution: {integrity: sha512-Yac1ao4flkTxTteCDZLEvdxg2fZfz1v8M4QpaGypq/WPDqg3ijHYbDfs+LG5hvzSoqaSZ9/Z9lKSP3CjZjv+pA==}
     engines: {node: '>=6.9.0'}
+    requiresBuild: true
     dependencies:
       '@babel/helper-validator-identifier': 7.22.20
       chalk: 2.4.2
@@ -2952,6 +2953,7 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    requiresBuild: true
     dev: true
 
   /js-yaml@3.14.1:
@@ -4198,8 +4200,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.13.0:
-    resolution: {integrity: sha512-nKO1N9IFeTec3jnNe/3nZlX+RzwZsvT3c4akWC3IlhYGQbRSPFMBe87vmoaymS3hW2l/rs+4ptDDTxzcbqAcmA==}
+  /type-fest@4.15.0:
+    resolution: {integrity: sha512-tB9lu0pQpX5KJq54g+oHOLumOx+pMep4RaM6liXh2PKmVRFF+/vAtUP0ZaJ0kOySfVNjF6doBWPHhBhISKdlIA==}
     engines: {node: '>=16'}
     dev: true
 

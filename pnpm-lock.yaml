@@ -33,11 +33,11 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5
       tsx:
-        specifier: ^4.7.2
-        version: 4.7.2
+        specifier: ^4.7.3
+        version: 4.7.3
       type-fest:
-        specifier: ^4.16.0
-        version: 4.16.0
+        specifier: ^4.18.0
+        version: 4.18.0
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -4156,8 +4156,8 @@ packages:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: false
 
-  /tsx@4.7.2:
-    resolution: {integrity: sha512-BCNd4kz6fz12fyrgCTEdZHGJ9fWTGeUzXmQysh0RVocDY3h4frk05ZNCXSy4kIenF7y/QnrdiVpTsyNRn6vlAw==}
+  /tsx@4.7.3:
+    resolution: {integrity: sha512-+fQnMqIp/jxZEXLcj6WzYy9FhcS5/Dfk8y4AtzJ6ejKcKqmfTF8Gso/jtrzDggCF2zTU20gJa6n8XqPYwDAUYQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
@@ -4210,8 +4210,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.16.0:
-    resolution: {integrity: sha512-z7Rf5PXxIhbI6eJBTwdqe5bO02nUUmctq4WqviFSstBAWV0YNtEQRhEnZw73WJ8sZOqgFG6Jdl8gYZu7NBJZnA==}
+  /type-fest@4.18.0:
+    resolution: {integrity: sha512-+dbmiyliDY/2TTcjCS7NpI9yV2iEFlUDk5TKnsbkN7ZoRu5s7bT+zvYtNFhFXC2oLwURGT2frACAZvbbyNBI+w==}
     engines: {node: '>=16'}
     dev: true
 

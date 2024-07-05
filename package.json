@@ -41,10 +41,10 @@
   "engines": {
     "node": ">=20",
     "npm": "please-use-npm",
-    "pnpm": ">=8",
+    "pnpm": ">=9",
     "yarn": "please-use-npm"
   },
   "volta": {
-    "node": "20.11.1"
+    "node": "20.15.0"
   }
 }

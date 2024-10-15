@@ -1,9 +1,9 @@
 #!/usr/bin/env -S pnpm exec tsx
-/* eslint-disable import/no-unresolved */
+/* eslint-disable no-console */
 
 // import pkgJSON from '../package.json' assert { type: 'json' };
 import { readJSON, writeJSON } from './utils/json';
-import { PackageJson } from 'type-fest';
+import type { PackageJson } from 'type-fest';
 import fsp from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

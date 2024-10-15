@@ -8,22 +8,30 @@
   },
   "license": "MIT",
   "author": "stereopasa",
-  "type": "commonjs",
+  "type": "module",
   "exports": {
-    ".": "./main.cjs",
-    "./package.json": "./package.json",
-    "./type-checking": "./type-checking.cjs"
+    ".": "./index.js",
+    "./ts": "./ts.js",
+    "./package.json": "./package.json"
   },
-  "main": "main.cjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm run /^test:/",
+    "test:demo": "node demo/test.js",
+    "test:lint": "eslint ."
+  },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.10.4",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1"
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-promise": "~7.1.0",
+    "globals": "15.11.0",
+    "typescript-eslint": "^8.9.0"
+  },
+  "devDependencies": {
+    "picocolors": "~1.1.0"
   },
   "peerDependencies": {
-    "eslint": ">=8.0.0"
+    "eslint": "^8.57.0 || ^9.0.0"
   },
   "publishConfig": {
     "access": "public"

@@ -34,7 +34,7 @@
     "prettier": "^3.3.3",
     "tsx": "^4.19.1",
     "type-fest": "^4.26.1",
-    "typescript": "~5.5.4"
+    "typescript": "~5.6.3"
   },
   "packageManager": "pnpm@9.12.1",
   "engines": {

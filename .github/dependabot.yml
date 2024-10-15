@@ -9,6 +9,11 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'weekly'
+    ignore:
+      - dependency-name: '@types/node'
+        versions: ['22.x'] # Targeting only v20.x, as that is the LTS release.
+      - dependency-name: 'typescript'
+        versions: ['5.6.x']
   # Keep our GitHub actions up to date.
   - package-ecosystem: 'github-actions'
     directory: '/'

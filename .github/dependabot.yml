@@ -9,6 +9,9 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'weekly'
+    ignore:
+      - dependency-name: '@types/node'
+        versions: ['20.x'] # Targeting only v20.x, as that is the LTS release.
   # Keep our GitHub actions up to date.
   - package-ecosystem: 'github-actions'
     directory: '/'

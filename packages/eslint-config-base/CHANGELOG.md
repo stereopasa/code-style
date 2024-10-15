@@ -1,5 +1,11 @@
 # @stereopasa/eslint-config-base
 
+## 0.1.0
+
+### Minor Changes
+
+- e3347c0: feat(eslint-base): flat configs js/ts
+
 ## 0.0.6
 
 ### Patch Changes

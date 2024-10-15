@@ -1,5 +1,12 @@
 # @stereopasa/prettier-config
 
+## 1.2.5
+
+### Patch Changes
+
+- 26c2e62: chore: bump deps
+- 0784856: chore(prettier): bump deps
+
 ## 1.2.4
 
 ### Patch Changes

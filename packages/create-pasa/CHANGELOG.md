@@ -1,5 +1,11 @@
 # create-pasa
 
+## 0.0.6
+
+### Patch Changes
+
+- fc90800: feat(template): update ts template
+
 ## 0.0.5
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @stereopasa/eslint-config-base
 
+## 0.2.0
+
+### Minor Changes
+
+- 98459fb: feat(eslint): some rules for import and console
+
 ## 0.1.0
 
 ### Minor Changes

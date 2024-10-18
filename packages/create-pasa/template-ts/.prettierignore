@@ -7,4 +7,5 @@
 !**/package.json
 !**/tsconfig.json
 !prettier.config.js
+!eslint.config.mjs
 !*.html

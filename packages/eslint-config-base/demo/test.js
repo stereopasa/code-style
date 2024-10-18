@@ -1,5 +1,6 @@
 import { exec } from 'node:child_process';
 import { join, relative } from 'node:path';
+
 import pico from 'picocolors';
 
 // const JS = `/eslint-config-base/demo/index.js

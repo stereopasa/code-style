@@ -1,6 +1,7 @@
-import base from './index.js';
 import js from '@eslint/js';
 import tseslint from 'typescript-eslint';
+
+import base from './index.js';
 
 export default tseslint.config(
   ...base,
@@ -18,9 +19,7 @@ export default tseslint.config(
     plugins: {
       '@typescript-eslint': tseslint.plugin,
     },
-    rules: {
-      'no-console': 'error',
-    },
+    rules: {},
   },
   ...tseslint.configs.recommended,
   {

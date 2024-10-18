@@ -2,11 +2,13 @@
 /* eslint-disable no-console */
 
 // import pkgJSON from '../package.json' assert { type: 'json' };
-import { readJSON, writeJSON } from './utils/json';
-import type { PackageJson } from 'type-fest';
 import fsp from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+import { type PackageJson } from 'type-fest';
+
+import { readJSON, writeJSON } from './utils/json';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

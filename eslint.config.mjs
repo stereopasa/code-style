@@ -33,4 +33,9 @@ export default [
       'no-undef': 'off',
     },
   },
+  {
+    rules: {
+      'import/no-default-export': 'off',
+    },
+  },
 ];

@@ -1,4 +1,4 @@
-import { Assets, ResolverManifest } from 'pixi.js';
+import { Assets, AssetsManifest } from 'pixi.js';
 
 export const loadAssets = async () => {
   const atlasRawData = await Assets.load({
@@ -12,7 +12,7 @@ export const loadAssets = async () => {
   ]);
 };
 
-export const manifest: ResolverManifest = {
+export const manifest: AssetsManifest = {
   bundles: [
     {
       name: 'bundleName',

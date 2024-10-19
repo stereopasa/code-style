@@ -18,7 +18,7 @@ export abstract class AbstractScene extends Container implements IScene {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   resize(_screenWidth: number, _screenHeight: number): void {}
 
-  destroy(): void {}
+  override destroy(): void {}
 }
 
 export class Manager {
@@ -64,7 +64,7 @@ export class Manager {
     globalThis.__PIXI_APP__ = Manager.app;
     this.stage.pivot.set(width / 2, height / 2);
     const area = new Graphics()
-      .beginFill(0xff0000, 0.05)
+      .beginFill(0xffffff, 0.025)
       // .drawRect(-width / 2, -height / 2, width, height)
       .drawRect(0, 0, width, height)
       .endFill();

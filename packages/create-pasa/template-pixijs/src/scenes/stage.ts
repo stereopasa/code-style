@@ -1,10 +1,12 @@
 import { Assets, Sprite } from 'pixi.js';
+
 import { AbstractScene, Manager } from '../manager';
 import { createSpine } from '../utils/spine';
 
 export class StageScene extends AbstractScene {
-  private clampy: Sprite;
+  private readonly clampy: Sprite;
   private clampyVelocity: number;
+
   constructor() {
     super();
 
@@ -19,10 +21,19 @@ export class StageScene extends AbstractScene {
     this.clampyVelocity = 5;
 
     const spineboy = createSpine(Assets.get('spineboy').spineData);
-    spineboy.state.setAnimation(0, 'idle', true);
-    spineboy.position.set(Manager.width / 2, Manager.height * 1.0);
+    spineboy.position.set(Manager.width / 2, Manager.height);
     spineboy.scale.set(0.75);
     this.addChild(spineboy);
+
+    const { animations } = spineboy.skeleton.data;
+    let animId = animations.findIndex((a) => a.name === 'idle');
+    const changeAnim = () => {
+      const animName = animations[animId++ % animations.length]!.name;
+      spineboy.state.setAnimation(0, animName, true);
+    };
+    spineboy.eventMode = 'static';
+    spineboy.on('pointerdown', changeAnim);
+    changeAnim();
   }
 
   public override update(framesPassed: number): void {

@@ -1,5 +1,11 @@
 # create-pasa
 
+## 0.0.7
+
+### Patch Changes
+
+- 53daa9f: feat(create): update templates
+
 ## 0.0.6
 
 ### Patch Changes

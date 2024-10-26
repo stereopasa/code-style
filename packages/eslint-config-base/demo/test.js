@@ -5,7 +5,8 @@ import pico from 'picocolors';
 
 // const JS = `/eslint-config-base/demo/index.js
 //   5:1  error  Unexpected console statement  no-console`;
-const JS = ``;
+const JS = `/eslint-config-base/demo/index.js
+  5:1  error  Unexpected console statement  no-console`;
 
 const TS = `/eslint-config-base/demo/index.ts
   1:5  error  'a' is never reassigned. Use 'const' instead  prefer-const

@@ -1,4 +1,4 @@
-import config from './ts';
+import config from './ts.js';
 
 export default [
   {

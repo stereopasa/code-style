@@ -1,5 +1,11 @@
 # @stereopasa/eslint-config-base
 
+## 0.2.1
+
+### Patch Changes
+
+- 8d5477a: bump deps and support ts ~5.6
+
 ## 0.2.0
 
 ### Minor Changes

@@ -27,12 +27,12 @@
   "devDependencies": {
     "@changesets/cli": "^2.27.9",
     "@types/node": "^22.8.6",
-    "eslint": "^9.13.0",
+    "eslint": "^9.15.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "only-allow": "^1.2.1",
     "prettier": "^3.3.3",
-    "tsx": "^4.19.1",
+    "tsx": "^4.19.2",
     "type-fest": "^4.26.1",
     "typescript": "~5.6.3"
   },

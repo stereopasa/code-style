@@ -13,7 +13,7 @@
     "preinstall": "npx only-allow pnpm",
     "lint": "pnpm /^lint:/",
     "lint:eslint": "eslint . --report-unused-disable-directives",
-    "lint:packages": "pnpm -r lint",
+    "lint:packages": "pnpm -r --if-present lint",
     "lint:prettier": "prettier --check .",
     "pack": "pnpm -r exec npm pack",
     "prepare": "husky"

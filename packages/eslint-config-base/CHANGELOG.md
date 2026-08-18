@@ -1,5 +1,11 @@
 # @stereopasa/eslint-config-base
 
+## 0.2.2
+
+### Patch Changes
+
+- 0fa6c48: Bump the toolchain to Node 24 and pnpm 11, and update dependencies to resolve known security vulnerabilities.
+
 ## 0.2.1
 
 ### Patch Changes

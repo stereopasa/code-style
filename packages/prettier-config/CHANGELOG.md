@@ -1,5 +1,11 @@
 # @stereopasa/prettier-config
 
+## 1.2.6
+
+### Patch Changes
+
+- 0fa6c48: Bump the toolchain to Node 24 and pnpm 11, and update dependencies to resolve known security vulnerabilities.
+
 ## 1.2.5
 
 ### Patch Changes

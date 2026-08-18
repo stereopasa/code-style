@@ -29,17 +29,17 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
           run_install: false
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
@@ -57,6 +57,7 @@ jobs:
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: changesets/action@v1
         with:
           version: pnpm ci:version
@@ -66,7 +67,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish
-        if: steps.changesets.outputs.hasChangesets == 'false'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && steps.changesets.outputs.hasChangesets == 'false'
         # You can do something when a publish should happen.
         run: pnpm ci:publish
         env:

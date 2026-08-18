@@ -1,3 +1,7 @@
+import { createRequire } from 'node:module';
+
+const require = createRequire(import.meta.url);
+
 /* @type {import("prettier").Config} */
 const config = {
   arrowParens: 'always',
@@ -12,7 +16,7 @@ const config = {
   trailingComma: 'all',
   useTabs: false,
 
-  plugins: ['prettier-plugin-packagejson'],
+  plugins: [require.resolve('prettier-plugin-packagejson')],
 };
 
 export default config;

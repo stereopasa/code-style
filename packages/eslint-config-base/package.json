@@ -21,11 +21,12 @@
     "test:lint": "eslint ."
   },
   "dependencies": {
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-promise": "~7.1.0",
-    "globals": "15.11.0",
-    "typescript-eslint": "^8.11.0"
+    "@eslint/js": "^9.39.5",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-promise": "~7.3.0",
+    "globals": "16.5.0",
+    "typescript-eslint": "^8.67.0"
   },
   "devDependencies": {
     "picocolors": "~1.1.1"

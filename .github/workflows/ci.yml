@@ -58,7 +58,7 @@ jobs:
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: changesets/action@v1
+        uses: changesets/action@v2
         with:
           version: pnpm ci:version
           commit: 'chore: update versions'

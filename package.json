@@ -33,7 +33,7 @@
     "only-allow": "^1.2.1",
     "prettier": "^3.9.6",
     "tsx": "^4.23.12",
-    "type-fest": "^4.41.0",
+    "type-fest": "^5.8.0",
     "typescript": "~5.9.3"
   },
   "packageManager": "pnpm@11.22.0",

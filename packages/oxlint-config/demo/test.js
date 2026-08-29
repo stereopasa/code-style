@@ -3,9 +3,13 @@ import { join, relative } from 'node:path';
 
 import pico from 'picocolors';
 
-const JS = `/oxlint-config/demo/index.js:5:1: error eslint(no-console): Unexpected console statement. help: Supported methods are: warn, error, debug, info.`;
+const JS = `/oxlint-config/demo/index.js:5:1: Unexpected console statement. [Error/eslint(no-console)]
 
-const TS = `/oxlint-config/demo/index.ts:1:24: warning eslint(no-unused-vars): Parameter 'a' is declared but never used. Unused parameters should start with a '_'. help: Consider removing this parameter.`;
+1 problem`;
+
+const TS = `/oxlint-config/demo/index.ts:1:24: Parameter 'a' is declared but never used. Unused parameters should start with a '_'. [Warning/eslint(no-unused-vars)]
+
+1 problem`;
 
 function cleanPath(path) {
   return relative(process.cwd(), path).replace(/\\/g, '/');
@@ -18,10 +22,12 @@ function normalize(output) {
 async function oxlint(config, files) {
   let path = join(import.meta.dirname, files);
   let configPath = join(import.meta.dirname, '..', config);
-  process.stderr.write(pico.gray(`oxlint --config ${cleanPath(configPath)} ${cleanPath(path)}\n`));
+  process.stderr.write(
+    pico.gray(`oxlint --format unix --config ${cleanPath(configPath)} ${cleanPath(path)}\n`),
+  );
   return new Promise((resolve) => {
     exec(
-      `pnpm oxlint --config ${configPath} ${path}`,
+      `pnpm oxlint --format unix --config ${configPath} ${path}`,
       { env: { ...process.env, NO_COLOR: '1' } },
       (_, stdout, stderr) => {
         if (stderr) {

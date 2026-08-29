@@ -1,3 +1,4 @@
+import { fixupPluginRules } from '@eslint/compat';
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintImport from 'eslint-plugin-import';
@@ -18,7 +19,8 @@ export default [
       },
     },
     plugins: {
-      import: eslintImport,
+      // eslint-plugin-import still reads context.parserOptions, removed in ESLint 10
+      import: fixupPluginRules(eslintImport),
       // n: eslintN,
       promise: eslintPromise,
     },

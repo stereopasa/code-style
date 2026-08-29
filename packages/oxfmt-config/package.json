@@ -1,0 +1,25 @@
+{
+  "name": "@stereopasa/oxfmt-config",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stereopasa/code-style.git",
+    "directory": "packages/oxfmt-config"
+  },
+  "license": "MIT",
+  "author": "stereopasa",
+  "exports": {
+    ".": {
+      "require": "./main.cjs",
+      "import": "./main.mjs"
+    }
+  },
+  "main": "main.cjs",
+  "module": "main.mjs",
+  "peerDependencies": {
+    "oxfmt": ">=0.65.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

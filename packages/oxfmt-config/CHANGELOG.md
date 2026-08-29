@@ -1,0 +1,1 @@
+# @stereopasa/oxfmt-config

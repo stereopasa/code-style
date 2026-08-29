@@ -63,6 +63,7 @@ const TEMPLATES = FRAMEWORKS.map(
 
 const renameFiles: Record<string, string | undefined> = {
   _gitignore: '.gitignore',
+  '_eslint.config.mjs': 'eslint.config.mjs',
   '_eslintrc.cjs': '.eslintrc.cjs',
   '_prettier.config.js': 'prettier.config.js',
 };

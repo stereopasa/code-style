@@ -1,0 +1,36 @@
+{
+  "name": "@stereopasa/oxlint-config",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stereopasa/code-style.git",
+    "directory": "packages/oxlint-config"
+  },
+  "license": "MIT",
+  "author": "stereopasa",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./configuration.json": "./configuration.json",
+    "./package.json": "./package.json"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm run /^test:/",
+    "test:demo": "node demo/test.js",
+    "test:lint": "oxlint ."
+  },
+  "devDependencies": {
+    "oxlint": "^1.80.0",
+    "picocolors": "~1.1.1"
+  },
+  "peerDependencies": {
+    "oxlint": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -11,6 +11,7 @@ export default [
       '**/dist',
       'packages/create-pasa/template-*/**/*',
       'packages/eslint-config-base/demo/index.*',
+      'packages/oxlint-config/demo/index.*',
     ],
   },
   ...config,

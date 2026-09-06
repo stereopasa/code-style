@@ -1,5 +1,12 @@
 # create-pasa
 
+## 0.0.8
+
+### Patch Changes
+
+- 67e3d79: Keep ESLint 10 from loading create-pasa template configs during monorepo lint, wrap eslint-plugin-import with @eslint/compat, and declare ESLint 10 as a supported peer of eslint-config-base.
+- c700c6e: Bump the toolchain to Node 24 and pnpm 11, and update dependencies to resolve known security vulnerabilities.
+
 ## 0.0.7
 
 ### Patch Changes
